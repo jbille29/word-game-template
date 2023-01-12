@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -30,11 +31,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-top: 0;
 }
 
 button {
@@ -67,4 +70,74 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+td.selected {
+  background-color: lightblue;
+}
+
+.word {
+  margin: auto;
+  margin-bottom: 2rem;
+ 
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.letters-guessed {
+  border-bottom: #ffffff 1px solid;
+  width: 40px;
+  height: 40px;
+  
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.board-container {
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+
+.board-container canvas, #overlay {
+  top: 0px;
+  left: 0px;
+  height: inherit;
+  width: inherit;
+}
+
+#overlay td{
+  border: none;
+}
+
+
+canvas {
+  position: absolute;
+  border: 1px solid black;
+  height: inherit;
+  width: inherit;
+  
+}
+
+.App {
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 1rem;
 }
